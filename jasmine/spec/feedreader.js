@@ -99,7 +99,7 @@ $(function() {
     // Test to ensure there is at least a single .entry element within the .feed container.
         it('Has been loaded', function(done) {
             let feed = $('.feed');
-            expect(feed.find('.entry').length > 0).toBe(true);
+            expect(feed.find('.entry').length).toBeGreaterThan(0);
             done();
         });
     });
